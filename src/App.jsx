@@ -1304,7 +1304,7 @@ function AppProvider({ children }) {
       
       {/* Achievement Notification */}
       {showAchievement && (
-        <div className="fixed top-4 left-1/2 transform -translate-x-1/2 z-50 animate-bounce">
+        <div className="fixed top-4 left-1/2 transform -translate-x-1/2 z-50 animate-fadeIn">
           <div className="bg-gradient-to-r from-yellow-400 to-orange-500 text-white px-8 py-6 rounded-2xl shadow-2xl border-4 border-white">
             <div className="flex items-center gap-4">
               <div className="text-5xl">{showAchievement.icon}</div>
@@ -1321,9 +1321,9 @@ function AppProvider({ children }) {
       {/* Level-Up Notification */}
       {showLevelUp && (
         <div className="fixed inset-0 flex items-center justify-center z-50 pointer-events-none">
-          <div className="animate-bounce">
+          <div className="animate-fadeIn">
             <div className="bg-gradient-to-b from-purple-500 to-blue-600 text-white px-12 py-8 rounded-3xl shadow-2xl border-4 border-yellow-300 text-center">
-              <div className="text-7xl mb-4 animate-spin" style={{ animationDuration: '1s' }}>⭐</div>
+              <div className="text-7xl mb-4">⭐</div>
               <div className="text-4xl font-black mb-2">LEVEL UP!</div>
               <div className="text-2xl font-bold mb-2">Niveau {showLevelUp}</div>
               <div className="text-lg opacity-90">Geweldig werk! 🎉</div>
@@ -1335,7 +1335,7 @@ function AppProvider({ children }) {
       {/* GROWTH MINDSET: Setup Modal bij eerste use */}
       {user.mindsetType === null && (
         <div className="fixed inset-0 bg-black bg-opacity-60 flex items-center justify-center z-50 p-4">
-          <div className="bg-white rounded-3xl shadow-2xl p-8 max-w-md text-center animate-bounce">
+          <div className="bg-white rounded-3xl shadow-2xl p-8 max-w-md text-center animate-fadeIn">
             <div className="text-6xl mb-4">🧠</div>
             <h2 className="text-3xl font-black text-gray-800 mb-4">Hallo!</h2>
             <p className="text-lg text-gray-700 mb-8 font-semibold">{getMindsetSetupMessage()}</p>
@@ -2271,7 +2271,7 @@ function LessonView() {
             {hasStory ? (
               // VERHAAL MODUS
               <div className="text-center">
-                <div className="text-8xl mb-4 animate-bounce">
+                <div className="text-8xl mb-4 animate-fadeIn">
                   {exercise.visual}
                 </div>
                 
@@ -2296,7 +2296,7 @@ function LessonView() {
             ) : (
               // GEWONE SOM MODUS
               <div className="text-center">
-                <div className="text-8xl mb-4 animate-bounce">
+                <div className="text-8xl mb-4 animate-fadeIn">
                   {mathEmoji}
                 </div>
                 <h2 className="text-4xl md:text-5xl lg:text-6xl font-black text-gray-800">
@@ -2432,7 +2432,7 @@ function LessonView() {
       {/* Motivation Popup - Positioned above questions */}
       {motivationPopup && (
         <div className="fixed top-24 left-1/2 transform -translate-x-1/2 z-50 w-full max-w-md px-4 pointer-events-none">
-          <div className="bg-white rounded-3xl shadow-2xl p-6 text-center animate-bounce border-4 border-yellow-400">
+          <div className="bg-white rounded-3xl shadow-2xl p-6 text-center animate-fadeIn border-4 border-yellow-400">
             <div className="text-5xl mb-3">{motivationPopup.emoji}</div>
             <h3 className="text-xl font-black text-gray-800 mb-2">{motivationPopup.title}</h3>
             <p className="text-base text-gray-700 leading-relaxed">{motivationPopup.message}</p>
@@ -2445,7 +2445,7 @@ function LessonView() {
       
       {/* Streak Message */}
       {streakMessage && (
-        <div className="fixed top-20 left-1/2 transform -translate-x-1/2 z-40 animate-bounce pointer-events-none">
+        <div className="fixed top-20 left-1/2 transform -translate-x-1/2 z-40 animate-fadeIn pointer-events-none">
           <div className="bg-gradient-to-r from-yellow-400 to-orange-500 text-white px-8 py-4 rounded-2xl shadow-lg border-4 border-white text-center">
             <p className="text-lg font-bold">{streakMessage}</p>
           </div>
@@ -3511,7 +3511,7 @@ function ShopView() {
       {/* Purchase Confirmation Modal */}
       {purchaseConfirm && (
         <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 p-4">
-          <div className="bg-white rounded-3xl shadow-2xl p-8 max-w-md text-center transform animate-bounce">
+          <div className="bg-white rounded-3xl shadow-2xl p-8 max-w-md text-center transform animate-fadeIn">
             <div className="text-6xl mb-4">{purchaseConfirm.item.icon}</div>
             <h3 className="text-3xl font-black text-gray-800 mb-3">{purchaseConfirm.item.name}</h3>
             
