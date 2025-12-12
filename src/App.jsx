@@ -900,27 +900,37 @@ const ACHIEVEMENTS = {
   leermeester: { id: 'leermeester', name: 'Leer Meester', icon: '📈', description: 'Verzamel 100 Leer Punten (fouten + correcties)', xp: 120, type: 'grit' },
 };
 
-  },
-  // Equipped avatar parts
-  equippedAvatar: {
-    head: null,
-    body: null,
-    accessory: null
-  },
-  // Room layout placement
+// Default user factory
+const getDefaultUser = () => ({
+  name: 'Leerling',
+  xp: 0,
+  dailyXp: 0,
+  hearts: 5,
+  streak: 0,
+  completedLessons: [],
+  dailyGoal: 50,
+  achievements: [],
+  lastAchievementCheck: null,
+  level: 1,
+  currentCombo: 0,
+  perfectLessons: 0,
+  totalQuestionsAnswered: 0,
+  fastestTime: null,
+  coins: 0,
+  inventory: { avatar: [], room: [], themes: [] },
+  equippedAvatar: { head: null, body: null, accessory: null },
   roomLayout: [],
-  activeItems: { avatar: null, theme: null }, // Backwards-compatible active items
-  
-  // GROWTH MINDSET SYSTEEM
-  learnPoints: 0, // Leer Punten: +1 per fout, +2 per correctie na fout
-  dailyLearnPoints: 0, // Leer Punten vandaag (reset dagelijks)
-  totalMistakes: 0, // Totaal aantal fouten (voor achievements)
-  mistakesSession: 0, // Fouten in huidige sessie (voor motivation popups)
-  mistakesInARow: 0, // Fouten achter elkaar (voor comeback tracking)
-  correctAfterMistakes: 0, // Correct antwoorden na fouten
-  sameQuestionAttempts: {}, // Track pogingen per vraag
-  mindsetType: null, // 'fixed' of 'growth' (set bij eerste use)
-  lastMotivationPopup: null, // Timestamp van laatste popup
+  activeItems: { avatar: null, theme: null },
+  // Growth mindset metrics
+  learnPoints: 0,
+  dailyLearnPoints: 0,
+  totalMistakes: 0,
+  mistakesSession: 0,
+  mistakesInARow: 0,
+  correctAfterMistakes: 0,
+  sameQuestionAttempts: {},
+  mindsetType: null,
+  lastMotivationPopup: null,
 });
 
 const loadUserData = () => {
