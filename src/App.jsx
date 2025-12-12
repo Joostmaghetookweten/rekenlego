@@ -575,6 +575,60 @@ const EXERCISES = {
 
 };
 
+// SHOP ITEMS DATABASE
+const SHOP_ITEMS = {
+  avatar: [
+    // Head
+    { id: 'item_red_cap', name: 'Rode Pet', category: 'avatar_head', price: 25, emoji: '🧢', rarity: 'common', unlockLevel: 1, preview: 'red_cap_preview' },
+    { id: 'item_blue_glasses', name: 'Blauwe Bril', category: 'avatar_head', price: 30, emoji: '🕶️', rarity: 'common', unlockLevel: 1, preview: 'blue_glasses_preview' },
+    { id: 'item_golden_crown', name: 'Gouden Kroon', category: 'avatar_head', price: 100, emoji: '👑', rarity: 'legendary', unlockLevel: 5, preview: 'golden_crown_preview' },
+    { id: 'item_robot_helm', name: 'Robot Helm', category: 'avatar_head', price: 75, emoji: '🤖', rarity: 'epic', unlockLevel: 4, preview: 'robot_helm_preview' },
+    { id: 'item_pirate_hat', name: 'Piratenhoed', category: 'avatar_head', price: 50, emoji: '🏴‍☠️', rarity: 'rare', unlockLevel: 2, preview: 'pirate_hat_preview' },
+    { id: 'item_hero_mask', name: 'Superhelden Masker', category: 'avatar_head', price: 60, emoji: '🦸', rarity: 'rare', unlockLevel: 3, preview: 'hero_mask_preview' },
+
+    // Body
+    { id: 'item_red_cape', name: 'Rode Cape', category: 'avatar_body', price: 50, emoji: '🧥', rarity: 'rare', unlockLevel: 2, preview: 'red_cape_preview' },
+    { id: 'item_green_sweater', name: 'Groene Trui', category: 'avatar_body', price: 40, emoji: '🧶', rarity: 'common', unlockLevel: 1, preview: 'green_sweater_preview' },
+    { id: 'item_football_shirt', name: 'Voetbalshirt', category: 'avatar_body', price: 45, emoji: '⚽', rarity: 'common', unlockLevel: 1, preview: 'football_shirt_preview' },
+    { id: 'item_knight_armor', name: 'Ridder Harnas', category: 'avatar_body', price: 80, emoji: '🛡️', rarity: 'epic', unlockLevel: 4, preview: 'knight_armor_preview' },
+    { id: 'item_astronaut_suit', name: 'Astronautenpak', category: 'avatar_body', price: 90, emoji: '🚀', rarity: 'epic', unlockLevel: 5, preview: 'astronaut_suit_preview' },
+
+    // Accessories
+    { id: 'item_golden_badge', name: 'Gouden Badge', category: 'avatar_accessory', price: 35, emoji: '🔰', rarity: 'common', unlockLevel: 1, preview: 'golden_badge_preview' },
+    { id: 'item_backpack', name: 'Rugzak', category: 'avatar_accessory', price: 30, emoji: '🎒', rarity: 'common', unlockLevel: 1, preview: 'backpack_preview' },
+    { id: 'item_skateboard', name: 'Skateboard', category: 'avatar_accessory', price: 55, emoji: '🛹', rarity: 'rare', unlockLevel: 2, preview: 'skateboard_preview' },
+  ],
+  room: [
+    // Meubels
+    { id: 'item_desk', name: 'Bureau', category: 'room_furniture', price: 100, emoji: '🪑', rarity: 'rare', unlockLevel: 3, preview: 'desk_preview' },
+    { id: 'item_chair', name: 'Stoel', category: 'room_furniture', price: 60, emoji: '🪑', rarity: 'common', unlockLevel: 1, preview: 'chair_preview' },
+    { id: 'item_bed', name: 'Bed', category: 'room_furniture', price: 120, emoji: '🛏️', rarity: 'epic', unlockLevel: 4, preview: 'bed_preview' },
+    { id: 'item_bookcase', name: 'Boekenkast', category: 'room_furniture', price: 80, emoji: '📚', rarity: 'rare', unlockLevel: 2, preview: 'bookcase_preview' },
+    { id: 'item_clock', name: 'Klok', category: 'room_furniture', price: 40, emoji: '🕰️', rarity: 'common', unlockLevel: 1, preview: 'clock_preview' },
+
+    // Decoratie
+    { id: 'item_poster', name: 'Poster', category: 'room_decor', price: 25, emoji: '🖼️', rarity: 'common', unlockLevel: 1, preview: 'poster_preview' },
+    { id: 'item_plant', name: 'Plant', category: 'room_decor', price: 30, emoji: '🪴', rarity: 'common', unlockLevel: 1, preview: 'plant_preview' },
+    { id: 'item_lamp', name: 'Lamp', category: 'room_decor', price: 50, emoji: '💡', rarity: 'rare', unlockLevel: 2, preview: 'lamp_preview' },
+    { id: 'item_rug', name: 'Tapijt', category: 'room_decor', price: 70, emoji: '🧶', rarity: 'rare', unlockLevel: 2, preview: 'rug_preview' },
+    { id: 'item_window_view', name: 'Raam met Uitzicht', category: 'room_decor', price: 90, emoji: '🪟', rarity: 'epic', unlockLevel: 3, preview: 'window_view_preview' },
+
+    // Speelgoed
+    { id: 'item_lego_set', name: 'Lego Set (decoratief)', category: 'room_toy', price: 100, emoji: '🧱', rarity: 'epic', unlockLevel: 3, preview: 'lego_set_preview' },
+    { id: 'item_teddy', name: 'Teddybeer', category: 'room_toy', price: 45, emoji: '🧸', rarity: 'common', unlockLevel: 1, preview: 'teddy_preview' },
+    { id: 'item_football', name: 'Voetbal', category: 'room_toy', price: 35, emoji: '⚽', rarity: 'common', unlockLevel: 1, preview: 'football_preview' },
+    { id: 'item_globe', name: 'Wereldbol', category: 'room_toy', price: 50, emoji: '🌍', rarity: 'rare', unlockLevel: 2, preview: 'globe_preview' },
+  ],
+  themes: [
+    { id: 'theme_space_pack', name: 'Ruimte Kamer Pack', category: 'theme_pack', price: 300, emoji: '🌌', rarity: 'legendary', unlockLevel: 6, preview: 'theme_space_preview' },
+    { id: 'theme_football_pack', name: 'Voetbal Kamer Pack', category: 'theme_pack', price: 280, emoji: '⚽', rarity: 'epic', unlockLevel: 5, preview: 'theme_football_preview' },
+    { id: 'theme_princess_pack', name: 'Prinses Kamer Pack', category: 'theme_pack', price: 320, emoji: '👑', rarity: 'legendary', unlockLevel: 6, preview: 'theme_princess_preview' },
+    { id: 'theme_hero_pack', name: 'Superhelden Pack', category: 'theme_pack', price: 290, emoji: '🦸', rarity: 'legendary', unlockLevel: 6, preview: 'theme_hero_preview' },
+  ],
+  powerups: [],
+};
+
+
 
 
 const LESSONS = [
@@ -909,8 +963,21 @@ const getDefaultUser = () => ({
   totalQuestionsAnswered: 0, // Nieuw: Totaal beantwoorde vragen
   fastestTime: null, // Nieuw: Snelste tijd voor les
   coins: 0, // Nieuw: Munten in winkel (1 munt = €0.10 symbolisch)
-  inventory: [], // Gekochte items
-  activeItems: { avatar: null, theme: null }, // Actieve avatar onderdeel & thema
+  // Nieuwe inventory structuur
+  inventory: {
+    avatar: [],
+    room: [],
+    themes: []
+  },
+  // Equipped avatar parts
+  equippedAvatar: {
+    head: null,
+    body: null,
+    accessory: null
+  },
+  // Room layout placement
+  roomLayout: [],
+  activeItems: { avatar: null, theme: null }, // Backwards-compatible active items
   
   // GROWTH MINDSET SYSTEEM
   learnPoints: 0, // Leer Punten: +1 per fout, +2 per correctie na fout
@@ -953,6 +1020,28 @@ const loadUserData = () => {
         parsed.dailyXp = 0;
       }
       
+      // Migrate old flat inventory (array) to new structured inventory if needed
+      if (Array.isArray(parsed.inventory)) {
+        const avatar = parsed.inventory.filter(id => id.startsWith('item_') && id.includes('avatar'));
+        // best-effort: separate by known prefixes/categories
+        const room = parsed.inventory.filter(id => id.startsWith('item_') && (id.includes('desk') || id.includes('chair') || id.includes('poster') || id.includes('lego') || id.includes('bed') || id.includes('teddy') || id.includes('rug') || id.includes('plant')));
+        const themes = parsed.inventory.filter(id => id.startsWith('theme_'));
+
+        parsed.inventory = {
+          avatar: avatar || [],
+          room: room || [],
+          themes: themes || []
+        };
+      }
+
+      // Ensure equippedAvatar exists
+      if (!parsed.equippedAvatar) {
+        parsed.equippedAvatar = { head: null, body: null, accessory: null };
+      }
+
+      // Ensure roomLayout exists
+      if (!Array.isArray(parsed.roomLayout)) parsed.roomLayout = [];
+
       return parsed;
     }
   } catch (error) {
@@ -3328,13 +3417,18 @@ function ShopView() {
 
   const allItems = [
     ...SHOP_ITEMS.avatar,
+    ...SHOP_ITEMS.room,
     ...SHOP_ITEMS.powerups,
     ...SHOP_ITEMS.themes,
   ];
 
-  const filteredItems = selectedCategory === 'all' 
-    ? allItems 
-    : allItems.filter(item => item.category === selectedCategory);
+  const filteredItems = (() => {
+    if (selectedCategory === 'all') return allItems;
+    if (selectedCategory === 'avatar') return allItems.filter(item => item.category && item.category.startsWith('avatar'));
+    if (selectedCategory === 'room') return allItems.filter(item => item.category && item.category.startsWith('room'));
+    if (selectedCategory === 'themes') return allItems.filter(item => item.category === 'theme_pack' || item.category === 'themes');
+    return allItems.filter(item => item.category === selectedCategory);
+  })();
 
   const handlePurchase = (item) => {
     if (user.coins >= item.price) {
@@ -3348,19 +3442,39 @@ function ShopView() {
     if (!purchaseConfirm) return;
     
     const { item } = purchaseConfirm;
-    const newInventory = [...(user.inventory || []), item.id];
-    
+    // Determine which inventory bucket to add the item into
+    const inv = user.inventory || { avatar: [], room: [], themes: [] };
+    const newInv = { ...inv };
+
+    if (item.category && item.category.startsWith('avatar')) {
+      newInv.avatar = Array.from(new Set([...(newInv.avatar || []), item.id]));
+    } else if (item.category && item.category.startsWith('room')) {
+      newInv.room = Array.from(new Set([...(newInv.room || []), item.id]));
+    } else if (item.category && item.category === 'theme_pack') {
+      newInv.themes = Array.from(new Set([...(newInv.themes || []), item.id]));
+    } else {
+      // fallback: put in avatar by default
+      newInv.avatar = Array.from(new Set([...(newInv.avatar || []), item.id]));
+    }
+
     updateUser({
       coins: Math.max(0, user.coins - item.price),
-      inventory: newInventory,
+      inventory: newInv,
     });
 
     triggerConfetti();
     setPurchaseConfirm(null);
     alert(`🎉 Gefeliciteerd! Je hebt ${item.name} gekocht!`);
+    console.log('Updated inventory:', newInv);
   };
 
   const isItemOwned = (itemId) => (user.inventory || []).includes(itemId);
+
+  // Updated check across structured inventory
+  const isItemOwnedStructured = (itemId) => {
+    const inv = user.inventory || { avatar: [], room: [], themes: [] };
+    return (inv.avatar || []).includes(itemId) || (inv.room || []).includes(itemId) || (inv.themes || []).includes(itemId);
+  };
 
   return (
     <div className="flex-1 overflow-auto bg-gradient-to-br from-amber-50 to-orange-50 p-6">
@@ -3428,7 +3542,8 @@ function ShopView() {
         {/* Shop Items Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {filteredItems.map((item) => {
-            const owned = isItemOwned(item.id);
+            const owned = isItemOwnedStructured(item.id);
+            const displayIcon = item.icon || item.emoji || item.preview || '🎁';
             
             return (
               <div
@@ -3439,7 +3554,7 @@ function ShopView() {
               >
                 {/* Badges */}
                 <div className="relative h-40 bg-gradient-to-br from-blue-400 to-purple-500 flex items-center justify-center">
-                  <div className="text-7xl">{item.icon}</div>
+                  <div className="text-7xl">{displayIcon}</div>
                   
                   {item.badge && (
                     <div className={`absolute top-2 right-2 px-3 py-1 rounded-full font-bold text-white text-xs ${
